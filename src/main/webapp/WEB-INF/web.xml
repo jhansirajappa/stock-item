@@ -1,0 +1,70 @@
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+   <servlet>
+ 	 <servlet-name>CreateItem</servlet-name>
+  	<servlet-class>com.ty.controller.CreateItemServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CreateItem</servlet-name>
+  	<url-pattern>/create</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+ 	 <servlet-name>DisplayItem</servlet-name>
+  	<servlet-class>com.ty.controller.DisplayItemServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>DisplayItem</servlet-name>
+  	<url-pattern>/display</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+ 	 <servlet-name>DeleteItem</servlet-name>
+  	<servlet-class>com.ty.controller.DeleteItemServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>DeleteItem</servlet-name>
+  	<url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+ 	 <servlet-name>GetItems</servlet-name>
+  	<servlet-class>com.ty.controller.GetItems</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>GetItems</servlet-name>
+  	<url-pattern>/getitems</url-pattern>
+  </servlet-mapping>
+   <servlet>
+ 	 <servlet-name>EditItem</servlet-name>
+  	<servlet-class>com.ty.controller.EditItemServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>EditItem</servlet-name>
+  	<url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+  
+  	<servlet>
+  		<servlet-name>Login</servlet-name>
+  		<servlet-class>com.ty.controller.LoginServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Login</servlet-name>
+  		<url-pattern>/login</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>Logout</servlet-name>
+  		<servlet-class>com.ty.controller.LogoutServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Logout</servlet-name>
+  		<url-pattern>/logout</url-pattern>
+  	</servlet-mapping>
+</web-app>
